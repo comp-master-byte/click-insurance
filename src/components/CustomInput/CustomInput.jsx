@@ -8,7 +8,7 @@ export const CustomInput = () => {
 
     const [value, setValue] = useState("");
 
-    console.log(value); // Вывод в консоль по ТЗ
+    console.log(value); // Вывод в консоль просят в ТЗ
 
     return (
         <AddressSuggestions
