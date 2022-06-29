@@ -21,7 +21,22 @@
         background-color: #F8F7FC;
         max-height: 200px;
         overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: rgba(48, 40, 137, .04);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #C082C7;
+        }
     }
+
+
 }
 
 .suggestion {

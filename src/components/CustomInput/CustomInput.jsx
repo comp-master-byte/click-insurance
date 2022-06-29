@@ -8,6 +8,8 @@ export const CustomInput = () => {
 
     const [value, setValue] = useState("");
 
+    console.log(value); // Вывод в консоль по ТЗ
+
     return (
         <AddressSuggestions
             inputProps={{
