@@ -19,6 +19,22 @@
     span {
         margin-right: 20px;
     }
+
+    .selectBtn__img {
+        transition: transform .3s linear;
+        transform: rotate(-180deg);
+    }
+
+    .selectBtn__closedImg {
+        transition: transform .3s linear;
+        transform: rotate(0deg);
+    }
+}
+
+.hideContent {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: .25s;
 }
 
 .content {
