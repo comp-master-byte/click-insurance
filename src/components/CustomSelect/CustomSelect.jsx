@@ -19,15 +19,16 @@ export const CustomSelect = () => {
             </div>
             {isOpen &&
                 <div className={styles.content}>
-                    {options.map(option =>
-                        <ul
-                            key={option}
-                            onClick={() => setSelectedOption(option)}
-                            className={styles.options}
-                        >
-                            <li>{option}</li>
-                        </ul>
-                    )}
+                    <ul className={styles.options}>
+                        {options.map(option =>
+                            <li
+                                key={option}
+                                onClick={() => setSelectedOption(option)}
+                            >
+                                {option}
+                            </li>
+                        )}
+                    </ul>
                 </div>
             }
 
