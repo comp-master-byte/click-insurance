@@ -6,7 +6,6 @@ import { CustomInput } from "./components/CustomInput/CustomInput";
 function App() {
 
     const [selectedOption, setSelectedOption] = useState("Паспорт");
-    const [locationValue, setLocationValue] = useState("");
 
     return (
       <div className="wrapper">
@@ -14,10 +13,7 @@ function App() {
             selectedOption={selectedOption}
             setSelectedOption={setSelectedOption}
         />
-        <CustomInput 
-            value={locationValue}
-            setValue={setLocationValue}
-        />
+        <CustomInput />
       </div>
     );
 }
