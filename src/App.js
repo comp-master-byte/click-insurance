@@ -5,14 +5,9 @@ import { CustomInput } from "./components/CustomInput/CustomInput";
 
 function App() {
 
-    const [selectedOption, setSelectedOption] = useState("Паспорт");
-
     return (
       <div className="wrapper">
-        <CustomSelect 
-            selectedOption={selectedOption}
-            setSelectedOption={setSelectedOption}
-        />
+        <CustomSelect />
         <CustomInput />
       </div>
     );

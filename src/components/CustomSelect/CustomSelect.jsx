@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import pointer from "../../icons/pointer.svg";
 import styles from "./CustomSelect.module.scss";
 
-export const CustomSelect = (props) => {
-
-    const { selectedOption, setSelectedOption } = props;
+export const CustomSelect = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState("Паспорт");
 
     const toggleHandler = () => setIsOpen(prev => !prev);
 
-    const options = ['Паспорт', 'Водительские права', 'Военный билет']
+    const options = ['Паспорт', 'Водительские права', 'Военный билет'];
 
     return (
         <div onClick={toggleHandler} className={styles.select}>
@@ -28,7 +27,6 @@ export const CustomSelect = (props) => {
                         >
                             <li>{option}</li>
                         </ul>
-
                     )}
                 </div>
             }
